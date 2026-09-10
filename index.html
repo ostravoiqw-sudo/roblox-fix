@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Не загружаются картинки в Roblox — что делать | Помощь и настройка</title>
+  <meta name="description" content="Картинки, аватары, иконки или превью не загружаются в Roblox? Разбираем возможные причины и способы проверки. Доступна пошаговая инструкция и помощь с настройкой.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+  <meta property="og:title" content="Не загружаются картинки в Roblox — что делать?">
+  <meta property="og:description" content="Пошаговая помощь, проверка соединения и варианты настройки Roblox.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="roblox-images-fix.png">
+  <style>
+    :root{--bg:#070b14;--card:#0f1726;--card2:#111d30;--text:#f7f9fc;--muted:#a9b5c8;--blue:#2d7cff;--red:#ff334f;--green:#2bd67b;--line:#22314a}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 80% 0,#14294b 0,#070b14 42%);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.55}
+    a{color:inherit}
+    .wrap{max-width:1080px;margin:auto;padding:0 22px}
+    header{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.07);position:sticky;top:0;background:rgba(7,11,20,.9);backdrop-filter:blur(12px);z-index:5}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{font-weight:900;letter-spacing:.5px;font-size:20px}.logo span{color:#4c91ff}
+    .navlinks{display:flex;gap:18px;font-size:14px;color:var(--muted)}
+    .navlinks a{text-decoration:none}.navlinks a:hover{color:#fff}
+    .hero{padding:64px 0 35px}
+    .badge{display:inline-block;padding:7px 11px;border:1px solid #29446c;border-radius:999px;color:#a9cbff;background:#0c1b31;font-size:13px}
+    h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin:18px 0;max-width:850px;letter-spacing:-2px}
+    .lead{font-size:20px;color:var(--muted);max-width:760px}
+    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+    .btn{display:inline-block;padding:13px 18px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid var(--line)}
+    .btn.primary{background:var(--blue);border-color:var(--blue)}.btn.secondary{background:#111b2c}
+    .heroimg{margin-top:26px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0b1220}
+    .heroimg img{display:block;width:100%;height:auto}
+    section{padding:55px 0}
+    h2{font-size:34px;margin:0 0 14px}.sub{color:var(--muted);max-width:760px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .card{background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:18px;padding:24px}
+    .icon{font-size:27px}.card h3{margin:10px 0 7px;font-size:20px}.card p{color:var(--muted);margin:0}
+    .steps{counter-reset:s}.step{display:grid;grid-template-columns:46px 1fr;gap:15px;padding:19px 0;border-bottom:1px solid var(--line);max-width:820px}
+    .step:before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#132a4e;color:#9fc6ff;font-weight:900}
+    .step h3{margin:0 0 5px}.step p{margin:0;color:var(--muted)}
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .price{font-size:30px;font-weight:900;margin:12px 0}.price small{font-size:14px;color:var(--muted);font-weight:500}
+    .popular{border-color:#367fff;box-shadow:0 0 0 1px #367fff inset}
+    ul{padding-left:20px;color:var(--muted)}li{margin:7px 0}
+    details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:10px 0;max-width:850px}
+    summary{cursor:pointer;font-weight:800}details p{color:var(--muted);margin-bottom:0}
+    .notice{padding:18px;border-radius:15px;background:#0e1c2e;border:1px solid #24466f;color:#cbdcff;max-width:850px}
+    footer{padding:35px 0 55px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+    @media(max-width:800px){.grid,.pricing{grid-template-columns:1fr}.navlinks{display:none}.hero{padding-top:40px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap"><nav>
+    <div class="logo">Roblox<span>Fix</span></div>
+    <div class="navlinks">
+      <a href="#problem">Проблема</a><a href="#guide">Проверка</a><a href="#help">Помощь</a><a href="#faq">FAQ</a>
+    </div>
+  </nav></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">Помощь с отображением изображений в Roblox</span>
+    <h1>Не загружаются картинки в Roblox?</h1>
+    <p class="lead">Аватары, иконки, превью или изображения в играх отображаются пустыми, серыми или бесконечно загружаются? Ниже — что проверить и какие варианты помощи доступны.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#help">Получить помощь</a>
+      <a class="btn secondary" href="#guide">Попробовать самостоятельно</a>
+    </div>
+    <div class="heroimg">
+      <img src="roblox-images-fix.png" alt="Помощь с загрузкой изображений в Roblox">
+    </div>
+  </div>
+</section>
+
+<section id="problem">
+  <div class="wrap">
+    <h2>Какие симптомы бывают?</h2>
+    <p class="sub">Одна и та же проблема может выглядеть по-разному. Сначала стоит убедиться, что дело действительно в загрузке ресурсов Roblox, а не в самой игре или локальном сбое.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">🖼️</div><h3>Картинки не появляются</h3><p>Вместо изображений остаются пустые места или серые блоки.</p></div>
+      <div class="card"><div class="icon">👤</div><h3>Не грузятся аватары</h3><p>Профили и элементы аватара отображаются некорректно или долго загружаются.</p></div>
+      <div class="card"><div class="icon">🎮</div><h3>Нет превью игр</h3><p>Миниатюры, иконки или другие изображения Roblox не отображаются.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="guide">
+  <div class="wrap">
+    <h2>Что проверить самостоятельно</h2>
+    <p class="sub">Начни с простых проверок. Они не требуют доступа к аккаунту Roblox.</p>
+    <div class="steps">
+      <div class="step"><div><h3>Проверь, проявляется ли проблема в нескольких местах</h3><p>Открой главную страницу Roblox, профиль и несколько игр. Если изображения не работают везде, проблема, вероятно, не связана с одной конкретной игрой.</p></div></div>
+      <div class="step"><div><h3>Проверь браузер и приложение</h3><p>Попробуй другой браузер или клиент Roblox. Это помогает отделить локальную проблему браузера от проблемы соединения.</p></div></div>
+      <div class="step"><div><h3>Перезапусти Roblox и сетевое соединение</h3><p>Полностью закрой клиент, перезапусти браузер и сетевое соединение, затем повтори проверку.</p></div></div>
+      <div class="step"><div><h3>Если проблема остаётся — проверь доступ к ресурсам изображений</h3><p>Если текст и сам Roblox открываются, но изображения систематически не загружаются, имеет смысл отдельно диагностировать доступ к ресурсам, с которых Roblox отдаёт изображения.</p></div></div>
+    </div>
+    <div class="notice" style="margin-top:25px">
+      <strong>Важно:</strong> не передавай никому пароль от Roblox. Для диагностики отображения изображений он не нужен.
+    </div>
+  </div>
+</section>
+
+<section id="help">
+  <div class="wrap">
+    <h2>Нужна помощь с настройкой?</h2>
+    <p class="sub">Если самостоятельная проверка не помогла, можно заказать пошаговую инструкцию или помощь с настройкой.</p>
+    <div class="pricing">
+      <div class="card">
+        <h3>📺 Видеоинструкция</h3>
+        <div class="price">499 ₽</div>
+        <p>Подробная инструкция для самостоятельной настройки.</p>
+        <ul><li>Пошаговые действия</li><li>Проверка результата</li><li>Без пароля от Roblox</li></ul>
+        <a class="btn primary" href="#contact">Заказать</a>
+      </div>
+      <div class="card popular">
+        <h3>🛠️ Помощь с настройкой</h3>
+        <div class="price">699 ₽</div>
+        <p>Провожу по шагам и помогаю проверить результат.</p>
+        <ul><li>Объяснение каждого шага</li><li>Помощь при ошибках</li><li>Проверка Roblox</li></ul>
+        <a class="btn primary" href="#contact">Заказать</a>
+      </div>
+      <div class="card">
+        <h3>💻 Дистанционная настройка</h3>
+        <div class="price">999 ₽</div>
+        <p>Настройка на вашем Windows-ПК с вашего разрешения.</p>
+        <ul><li>Удалённое подключение</li><li>Вы видите процесс</li><li>Финальная проверка</li></ul>
+        <a class="btn primary" href="#contact">Заказать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Частые вопросы</h2>
+    <details><summary>Нужен ли пароль от Roblox?</summary><p>Нет. Для настройки отображения изображений пароль от аккаунта не нужен.</p></details>
+    <details><summary>Это работает на телефоне?</summary><p>Текущая услуга ориентирована на Windows-ПК. Для мобильных устройств диагностика может отличаться.</p></details>
+    <details><summary>Что если у меня другая проблема?</summary><p>Перед заказом опиши проблему или пришли скриншот. Сначала нужно понять, связана ли она именно с загрузкой изображений.</p></details>
+    <details><summary>Вы гарантируете результат?</summary><p>Нет: причины могут быть разными. Поэтому сначала рекомендуется диагностика. Я не обещаю результат там, где проблема вызвана другой причиной или ограничением самого сервиса.</p></details>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Как связаться</h2>
+    <p class="sub">Замени ссылки ниже на свои реальные страницы Avito и FunPay перед публикацией.</p>
+    <div class="buttons">
+      <a class="btn primary" href="YOUR_AVITO_LINK">Написать на Avito</a>
+      <a class="btn secondary" href="YOUR_FUNPAY_LINK">Открыть услугу на FunPay</a>
+    </div>
+    <p class="sub">Не размещай здесь пароль, cookies, токены или другие данные от аккаунта Roblox.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>RobloxFix — информационная страница и помощь с настройкой отображения изображений.</div>
+    <div style="margin-top:8px">Сайт не связан с Roblox Corporation и не является официальным сайтом Roblox.</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Нужен ли пароль от Roblox?","acceptedAnswer":{"@type":"Answer","text":"Нет. Для настройки отображения изображений пароль от аккаунта не нужен."}},
+    {"@type":"Question","name":"Это работает на телефоне?","acceptedAnswer":{"@type":"Answer","text":"Текущая услуга ориентирована на Windows-ПК. Для мобильных устройств диагностика может отличаться."}},
+    {"@type":"Question","name":"Что если у меня другая проблема?","acceptedAnswer":{"@type":"Answer","text":"Перед заказом опиши проблему или пришли скриншот. Сначала нужно понять, связана ли она именно с загрузкой изображений."}}
+  ]
+}
+</script>
+</body>
+</html>
